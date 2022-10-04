@@ -1,0 +1,18 @@
+.main-head__link{
+    position: relative;
+    display: flex;
+
+    &:hover,
+    &:focus{
+
+        & .main-head__icon{
+            fill: $mainColor;
+            cursor: pointer;
+        }
+    }
+  }
+
+.main-head__icon{
+    width: 40px;
+    height: 40px;
+}

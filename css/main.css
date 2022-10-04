@@ -36,11 +36,11 @@ h1 {
   margin: 0px;
 }
 
-h2 {
+h2 { /* for mobile */
   margin: 0px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.116;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -48,25 +48,24 @@ h2 {
 
 /* ************************************************ */
 /* auxiliary class  */
-.container {
-  max-width: 1200px;
+.container { /* for mobile */
+  max-width: 450px;
   margin: 0 auto;
 }
 
-.ssection {
+.ssection { /* for mobile */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* ### Header ### */
-.main-head__logo { /* ### Logo - header ### */
-  margin: 0px;
+.main-head__logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #212121;
@@ -74,25 +73,6 @@ h2 {
 }
 .main-head__logo--color {
   color: #2196f3;
-}
-
-.foter__logo { /* ### Logo - footer ### */
-  margin: 0px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-decoration: none;
-}
-.foter__logo--color {
-  color: #2196f3;
-}
-
-.main-head-border-bottom {
-  border-bottom: 1px solid #ececec;
 }
 
 .main-head {
@@ -104,52 +84,9 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 0px;
+  gap: 246px;
+  padding: 16px 15px;
   background-color: #ffffff;
-}
-
-.header-navigation__list { /* ### Menu navigation ### */
-  margin: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 43px;
-  margin-left: 93px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  margin-right: 364px;
-}
-
-.header-navigation__link {
-  color: #212121;
-  text-decoration: none;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-navigation__link:hover, .header-navigation__link:focus, .header-navigation__link:active {
-  color: #2196f3;
-}
-.header-navigation__link--underline::after { /* PSEUDO CLASS ::AFTER */
-  margin: 0px;
-  margin-top: 36px;
-  content: "";
-  background-color: #2196f3;
-  padding: 2px 26.5px;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
 }
 
 .header-contact { /* ### Header contact ### */
@@ -205,24 +142,25 @@ h2 {
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 200px 0px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgNew.jpg");
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/imgNew.jpg");
+  padding-top: 118px;
+  padding-bottom: 58px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/HeaderImg.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/images/HeaderImg.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px auto;
+  background-size: 480px auto;
   background-position: center;
 }
 
 .heading-overlay {
-  background-color: #2f303a;
+  background-color: rgba(47, 48, 58, 0.4);
 }
 
 .heading__title {
   margin: 0px;
   padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -254,10 +192,14 @@ h2 {
 
 /* ### Our-strengths ### */
 /* *************SECTION NO.1 - OUR STRENGTHS ************ */
-.our-strengths__list {
+.our-strengths__list { /* for mobile */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -266,10 +208,11 @@ h2 {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 .our-strengths__list--distance {
-  padding-top: 94px;
+  padding: 60px 0px;
 }
 .our-strengths__list .our-strengths__item .our-strengths__icon { /* svg */
   margin-bottom: 30px;
@@ -277,10 +220,12 @@ h2 {
   border-radius: 4px;
 }
 .our-strengths__list .our-strengths__item .our-strengths__paragraph { /* paragraph */
+  margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  text-align: left;
   color: #757575;
 }
 
@@ -340,6 +285,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -348,11 +297,15 @@ h2 {
   color: #212121;
 }
 .our-team__list--distance {
-  padding-top: 50px;
+  padding-top: 30px;
 }
-.our-team__list--position { /* svg */
+.our-team__list--position { /* svg */ /* for mobile */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 10px;
-  margin: 0px 32px 30px 32px;
+  margin: 0px 122px 24px 122px;
 }
 .our-team__list .our-team__item {
   margin: 0px;
@@ -974,4 +927,21 @@ h2 {
 }
 .modal-form__btn:hover, .modal-form__btn:focus {
   opacity: 0.5;
+}
+
+/* ### Header icon for mobile ### */
+.main-head__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-head__link:hover .main-head__icon, .main-head__link:focus .main-head__icon {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.main-head__icon {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */

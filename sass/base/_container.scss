@@ -1,7 +1,13 @@
             /* auxiliary class  */
-.container{
-  max-width: 1200px;
-            
-  margin: 0 auto; 
+
+.container{             /* for mobile */
+  max-width: 450px;
+  margin: 0 auto;
 }
+
+            // .container{
+//   max-width: 1200px;
+            
+//   margin: 0 auto; 
+// }
 

@@ -7,6 +7,7 @@
 .our-team__list{           
     display: flex;
     align-items:center;
+    flex-direction: column;
     gap: 30px;
 
     font-weight: 700;
@@ -17,12 +18,13 @@
     color: $secondaryColor;
 
     &--distance{
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
-    &--position{      /* svg */
+    &--position{      /* svg */ /* for mobile */
+        flex-direction: row;    
         gap: 10px;
-        margin: 0px 32px 30px 32px;
+        margin: 0px 122px 24px 122px;
     }
 
     & .our-team__item{
@@ -44,7 +46,7 @@
 
         & .our-team__name{
             margin: 0px;
-            margin-top: 30px;
+            margin-top: 30px;   
         
             font-weight: 500;
             font-size: 16px;

@@ -16,15 +16,26 @@ h1{
     margin: 0px;
 }
 
-h2{
+h2{                 /* for mobile */
     margin: 0px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.116;
+    font-size: 28px;
+    line-height: 1.179;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $secondaryColor;
 }
+
+// h2{
+//     margin: 0px;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.116;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+
+//     color: $secondaryColor;
+// }
 
 /* ************************************************ */
