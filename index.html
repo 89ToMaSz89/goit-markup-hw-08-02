@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -26,7 +27,7 @@
       </a>
 
       <a class="main-head__link">
-        <svg class="main-head__icon">
+        <svg class="main-head__icon" mobile-menu-open>
           <use
             href="./images/icons.svg#icon-menu_24px"
             width="24"
@@ -1272,6 +1273,63 @@
       </div>
     </footer> -->
 
+    <!-- MOBILE MENU -->
+
+    <div class="backdrop is-hidden" mobile-navigation>
+      <div class="mobile-menu">
+        <a class="mobile-menu__link">
+          <svg class="mobile-menu__icon" mobile-menu-close>
+            <use
+              href="./images/icons.svg#icon-close_24px"
+              width="18"
+              height="18"
+              x="11"
+              y="11"
+            ></use>
+          </svg>
+        </a>
+
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Agencja</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Kontakt</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contact">
+          <li class="mobile-menu-contact__item">
+            <a href="" class="mobile-menu-contact__link mobile-menu-contact-link--style-telephone">+48 111 111 111</a>
+          </li>
+          <li class="mobile-menu-contact__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu-contact__link mobile-menu-contact__link--style-email">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-social">
+          <li class="mobile-menu-social__item">
+            <a href="https://www.instagram.com/" class="mobile-menu-social__link mobile-menu-social__link--style">Instagram</a>
+            <span class="mobile-menu-social__vertical-line"></span>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a href="https://twitter.com/" class="mobile-menu-social__link mobile-menu-social__link--style">Twitter</a>
+            <span class="mobile-menu-social__vertical-line"></span>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a href="https://www.facebook.com/" class="mobile-menu-social__link mobile-menu-social__link--style">Facebook</a>
+            <span class="mobile-menu-social__vertical-line"></span>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a href="https://pl.linkedin.com/" class="mobile-menu-social__link mobile-menu-social__link--style">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!--WINDOW MODAL-->
 
     <div class="backdrop is-hidden" data-modal>
@@ -1358,5 +1416,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -990,4 +990,120 @@ h2 { /* for mobile */
 .main-head__icon {
   width: 40px;
   height: 40px;
+}
+
+/* ### Mobile menu ### */
+.mobile-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 480px;
+  height: 796px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.mobile-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 48px;
+  left: 40px;
+}
+.mobile-menu .mobile-menu-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 562px;
+  left: 40px;
+}
+.mobile-menu .mobile-menu-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 726px;
+  left: 40px;
+}
+
+.mobile-menu__link,
+.mobile-menu-contact__link,
+.mobile-menu-social__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus,
+.mobile-menu-contact__link:hover,
+.mobile-menu-contact__link:focus,
+.mobile-menu-social__link:hover,
+.mobile-menu-social__link:focus {
+  color: #2196f3;
+}
+.mobile-menu__link:hover .mobile-menu__icon, .mobile-menu__link:focus .mobile-menu__icon,
+.mobile-menu-contact__link:hover .mobile-menu__icon,
+.mobile-menu-contact__link:focus .mobile-menu__icon,
+.mobile-menu-social__link:hover .mobile-menu__icon,
+.mobile-menu-social__link:focus .mobile-menu__icon {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.mobile-menu-contact__link--style-email {
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-menu-contact__link--style-telephone {
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-menu-contact__link--style-telephone:hover {
+  opacity: 0.5;
+}
+
+.mobile-menu-social__link--style {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-menu-social__link--style:hover, .mobile-menu-social__link--style:focus {
+  opacity: 0.5;
+}
+
+.mobile-menu-social__vertical-line {
+  margin-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }/*# sourceMappingURL=main.css.map */
