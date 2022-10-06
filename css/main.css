@@ -571,6 +571,7 @@ h2 { /* for mobile */
 .foter {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 60px 0px; /* Deleted of padding for mobile */
 }
 
 .foter-overlay {
@@ -581,8 +582,6 @@ h2 { /* for mobile */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -590,6 +589,7 @@ h2 { /* for mobile */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 60px; /* for mobile */
   padding-top: 20px;
 }
 
@@ -602,6 +602,10 @@ h2 { /* for mobile */
 }
 
 .foter__list--collocation-social {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 10px;
   margin: 0px;
 }
@@ -630,7 +634,6 @@ h2 { /* for mobile */
 
 .foter__item--collocation {
   position: relative;
-  left: 78px;
   top: 0px;
 }
 
@@ -677,12 +680,25 @@ h2 { /* for mobile */
 }
 
 .foter__form {
-  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-top: 0px;
 }
 .foter__form .foter__field-email {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   left: 0px;
-  top: 52px;
+  top: 20px; /* for mobile */
   padding: 15px 0px 15px 16px;
   font-weight: 400;
   font-size: 16px;
@@ -702,8 +718,8 @@ h2 { /* for mobile */
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 29px;
-  margin-left: 370px;
+  margin-top: 100px;
+  margin-left: 0px;
   padding: 10px 13px 10px 42px;
   font-weight: 700;
   font-size: 16px;
@@ -759,8 +775,8 @@ h2 { /* for mobile */
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -776,7 +792,7 @@ h2 { /* for mobile */
   color: #212121;
 }
 .modal .modal-form { /* ### form ### */
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -784,6 +800,9 @@ h2 { /* for mobile */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12px 40px 20px 40px;
   gap: 10px;
 }
@@ -804,7 +823,6 @@ h2 { /* for mobile */
 }
 .modal .modal-form .modal-form__chack-name { /*checkbox*/
   position: relative;
-  left: 13px;
   top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,8 +831,8 @@ h2 { /* for mobile */
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px; /* for mobile */
+  line-height: 1.166; /* for mobile */
   letter-spacing: 0.03em;
   color: #757575;
   overflow: hidden;
@@ -860,7 +878,7 @@ h2 { /* for mobile */
 }
 
 .modal-form__clause {
-  margin-left: 7px;
+  margin-left: 8px; /* for mobile */
 }
 
 .modal-form__link {
@@ -888,9 +906,8 @@ h2 { /* for mobile */
 }
 
 .modal-form__field { /* field of form */
-  width: 448px;
+  width: 370px; /* for mobile */
   height: 40px;
-  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   -webkit-transition-property: border-color;
@@ -933,12 +950,14 @@ h2 { /* for mobile */
 
 .modal-form__btn { /* button */
   position: absolute;
-  left: 164px;
   top: 420px;
-  padding: 10px 76px;
+  padding: 10px 52px; /* for mobile */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #2196f3;
   border: none;
   border-radius: 4px;

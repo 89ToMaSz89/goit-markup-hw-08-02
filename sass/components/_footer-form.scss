@@ -1,10 +1,16 @@
 .foter__form{
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    margin-top: 0px;
 
     & .foter__field-email{
-        position: absolute;
+        // 
+        display: flex;
+        align-items: center;
         left: 0px;
-        top: 52px;
+        top: 20px;      /* for mobile */
         padding: 15px 0px 15px 16px;
     
         font-weight: 400;
@@ -28,8 +34,8 @@
         align-items: center;
         text-align: center;
     
-        margin-top: 29px;
-        margin-left: 370px;
+        margin-top: 100px;
+        margin-left: 0px;
         padding: 10px 13px 10px 42px;
     
         font-weight: 700;

@@ -1,7 +1,7 @@
 .foter{
     box-sizing: border-box;
 
-    // padding: 60px 0px;   /* Deleted of padding for mobile */
+    padding: 60px 0px;   /* Deleted of padding for mobile */
 }
 
 .foter-overlay{
@@ -10,11 +10,12 @@
 
 .foter__list{
     display: flex;
-    align-content: center;
+    // align-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 60px;             /* for mobile */
 
-    // margin-right: 70px;
+    // margin-right: 70px;  /* deleted for mobile */
     padding-top: 20px;
 }
     
@@ -24,6 +25,7 @@
 }
 
  .foter__list--collocation-social{
+    flex-direction: row;
     gap: 10px;
     margin: 0px;
 }
@@ -56,7 +58,7 @@
 
 .foter__item--collocation{
     position: relative;
-    left: 78px;
+    // left: 78px;      /* deleted for mobile */
     top: 0px;
 }
 
