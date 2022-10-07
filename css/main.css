@@ -100,6 +100,7 @@ h2 { /* for mobile */
           align-items: center;
   gap: 246px;
   padding: 16px 15px;
+  position: relative;
   background-color: #ffffff;
 }
 
@@ -433,8 +434,7 @@ h2 { /* for mobile */
 }
 
 /* ### Menu ### */
-.menu__list { /* ### menu ### */
-  margin: 0px;
+.menu__list {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -444,12 +444,16 @@ h2 { /* for mobile */
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  padding-left: 295px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 73px;
 }
 
 .menu__btn {
   margin: 0px;
-  padding: 6px 22px;
+  padding: 6px 13px; /* for mobile */
   border-radius: 4px;
   border: none;
   font-size: 16px;
@@ -475,6 +479,11 @@ h2 { /* for mobile */
   cursor: pointer;
 }
 
+.menu--position { /* for mobile */
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
 /* ### Projects ### */
 .project-card {
   margin: 0px;
@@ -483,13 +492,20 @@ h2 { /* for mobile */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  position: relative;
+  margin-top: 0px; /* for mobile */
 }
 
 .project-card__item {
+  position: absolute;
   border-bottom: 1px solid #eeeeee;
   background-color: #ffffff;
   -webkit-transition-property: -webkit-box-shadow;
@@ -550,7 +566,7 @@ h2 { /* for mobile */
   top: 0px;
   margin: 0px;
   width: 100%;
-  padding: 49px 45px 49px 24px;
+  padding: 77px 24px; /* for mobile */
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%); /* transformation */

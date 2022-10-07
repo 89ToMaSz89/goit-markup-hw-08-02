@@ -18,16 +18,29 @@
     />
   </head>
   <body>
-    <!--Header-->
+    <!-- ### HEADER ### -->
 
-    <header class="main-head container">
+    <header class="main-head container main-head--border-bottom">
       <a href="./index.html" class="main-head__logo">
         <span class="main-head__logo main-head__logo--color">Web</span>Studio
       </a>
 
-      <!--Menu navigation-->
+      <a class="main-head__link">
+        <svg class="main-head__icon" mobile-menu-open>
+          <use
+            href="./images/icons.svg#icon-menu_24px"
+            width="24"
+            height="16"
+            x="8"
+            y="12"
+          ></use>
+        </svg>
+      </a>
+    </header>
 
-      <nav class="header-navigation">
+    <!--Menu navigation-->
+
+    <!-- <nav class="header-navigation">
         <ul class="header-navigation__list">
           <li class="header-navigation__item">
             <a href="./index.html" class="header-navigation__link">Agencja</a>
@@ -43,11 +56,11 @@
             <a href="" class="header-navigation__link">Kontakt</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
 
-      <!--Header contact-->
+    <!--Header contact-->
 
-      <ul class="header-contact">
+    <!-- <ul class="header-contact">
         <li class="header-contact__item">
           <a class="header-contact__link" href="mailto:info@devstudio.com">
             <svg class="header-contact__icon">
@@ -74,16 +87,14 @@
           </a>
         </li>
       </ul>
-    </header>
-
-    <div class="main-head-border-bottom"></div>
+    </header>-->
 
     <!--Main-->
 
     <!--MENU-->
 
     <main>
-      <section class="menu ssection">
+      <section class="menu menu--position">
         <div class="container">
           <ul class="menu__list">
             <li class="menu__item">
@@ -102,31 +113,34 @@
               <button class="menu__btn" type="button">Marketing</button>
             </li>
           </ul>
+        </div>
+      </section>
 
-          <!--PROJECTS-->
+      <!-- PROJECTS -->
 
-          <ul class="project-card">
-            <li class="project-card__item">
-              <figure class="project-card__picture">
-                <img
-                  src="images/imgH.jpg"
-                  width="370"
-                  height="294"
-                  alt="Technocrack"
-                />
-                <div class="project-card__description-box">
-                  <p class="project-card__description">
-                    Technocrack jest popularną platformą wykorzystywaną do
-                    rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                    platformę do celów szpiegowskich i ataków na
-                    niezabezpieczone serwery konkurencji
-                  </p>
-                </div>
-              </figure>
-              <figcaption class="project-card__name">Technocrack</figcaption>
-              <p class="project-card__category">Strona internetowa</p>
-            </li>
-            <li class="project-card__item">
+      <ul class="project-card">
+        <li class="project-card__item">
+          <figure class="project-card__picture">
+            <img
+              src="images/imgEmobile.jpg"
+              width="450"
+              height="294"
+              alt="Technocrack"
+              srcset="images/imgEmobile@2x.jpg"
+            />
+            <div class="project-card__description-box">
+              <p class="project-card__description">
+                Technocrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </p>
+            </div>
+          </figure>
+          <figcaption class="project-card__name">Technocrack</figcaption>
+          <p class="project-card__category">Strona internetowa</p>
+        </li>
+        <!--<li class="project-card__item">
               <figure class="project-card__picture">
                 <img
                   src="images/imgI.jpg"
@@ -295,15 +309,15 @@
                 Growing Business
               </figcaption>
               <p class="project-card__category">Aplikacja</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </li>-->
+      </ul>
+      <!-- </div>
+      </section>  -->
     </main>
 
     <!-- ### FOOTER ### -->
 
-    <footer class="foter foter-overlay">
+    <!-- <footer class="foter foter-overlay">
       <div class="container">
         <ul class="foter__list">
           <li class="foter__item">
@@ -380,11 +394,11 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
 
-          <!-- FORM -->
+    <!-- FORM -->
 
-          <li class="foter__item foter__item--collocation">
+    <!-- <li class="foter__item foter__item--collocation">
             <form class="foter__form">
               <label for="email-newsletter" class="foter__head"
                 >ZAPISZ SIĘ DO NEWSLETTERA</label
@@ -405,7 +419,90 @@
             </form>
           </li>
         </ul>
+      </div> -->
+    <!-- </footer> -->
+
+    <!-- MOBILE MENU -->
+
+    <div class="backdrop is-hidden" mobile-navigation>
+      <div class="mobile-menu">
+        <a class="mobile-menu__link">
+          <svg class="mobile-menu__icon" mobile-menu-close>
+            <use
+              href="./images/icons.svg#icon-close_24px"
+              width="18"
+              height="18"
+              x="11"
+              y="11"
+            ></use>
+          </svg>
+        </a>
+
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Agencja</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Kontakt</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contact">
+          <li class="mobile-menu-contact__item">
+            <a
+              href=""
+              class="mobile-menu-contact__link mobile-menu-contact-link--style-telephone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-menu-contact__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu-contact__link mobile-menu-contact__link--style-email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-social">
+          <li class="mobile-menu-social__item">
+            <a
+              href="https://www.instagram.com/"
+              class="mobile-menu-social__link mobile-menu-social__link--style"
+              >Instagram</a
+            >
+            <span class="mobile-menu-social__vertical-line"></span>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a
+              href="https://twitter.com/"
+              class="mobile-menu-social__link mobile-menu-social__link--style"
+              >Twitter</a
+            >
+            <span class="mobile-menu-social__vertical-line"></span>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a
+              href="https://www.facebook.com/"
+              class="mobile-menu-social__link mobile-menu-social__link--style"
+              >Facebook</a
+            >
+            <span class="mobile-menu-social__vertical-line"></span>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a
+              href="https://pl.linkedin.com/"
+              class="mobile-menu-social__link mobile-menu-social__link--style"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

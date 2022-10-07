@@ -1,4 +1,6 @@
 .project-card__item{
+    position: absolute;
+
     border-bottom: 1px solid $borderCardColor;
     background-color: $fourthColor;
 
@@ -66,7 +68,8 @@
     top: 0px;
     margin: 0px;
     width: 100%;
-    padding: 49px 45px 49px 24px;
+    // padding: 49px 45px 49px 24px;
+    padding: 77px 24px;     /* for mobile */
 
     background-color: rgba(33, 150, 243, 0.9);
 

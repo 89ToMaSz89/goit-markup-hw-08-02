@@ -1,18 +1,20 @@
-.menu__list{              /* ### menu ### */
-    margin: 0px;
-
-    box-sizing: border-box; 
+.menu__list{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: 8px;
 
-    padding-left: 295px;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 73px;
 }
 
 .menu__btn{
     margin: 0px;
 
-    padding: 6px 22px;
+    // padding: 6px 22px;
+    padding: 6px 13px;      /* for mobile */
 
     border-radius: 4px;
     border: none;
@@ -40,4 +42,9 @@
     
     cursor: pointer;
     }
+}
+
+.menu--position{        /* for mobile */
+    padding-top: 60px;
+    padding-bottom: 40px;
 }

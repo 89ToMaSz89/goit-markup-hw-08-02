@@ -1,6 +1,13 @@
-// .main-head-border-bottom{
+// .main-head--border-bottom{   /* for mobile */
+//     width: 480px;
 //     border-bottom: 1px solid $borderHeadColor;
-// }
+
+//     //position
+// //     top: 100%;
+// //     left: 50%;
+
+// //     transform: translate(-50%,-50%);
+// // }
 
 .main-head{
     box-sizing: border-box;
@@ -8,10 +15,16 @@
     align-items: center; 
     gap: 246px;
     padding: 16px 15px;
+
+    position: relative;
   
     background-color: $fourthColor;
 
     //overflow: hidden;     /* for mobile */
   }
+
+//   .main-head--border-bottom{
+//     border: 1px solid orange;
+// }
 
  
