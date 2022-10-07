@@ -605,6 +605,15 @@ h2 { /* for mobile */
   gap: 20px;
   padding-top: 60px;
 }
+.foter__list .foter__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
 
 .foter__list--collocation {
   padding-top: 0px;
@@ -620,83 +629,12 @@ h2 { /* for mobile */
   padding-top: 0px;
 }
 
-.foter__item {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
 .foter__head {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-.foter__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-.foter__form .foter__field-email {
-  width: 450px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: #2f303a;
-}
-
-.foter__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 10px 13px 10px 42px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  border: 0px;
-  border-radius: 4px;
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.foter__btn:hover, .foter__btn:focus {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.foter__form-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 24px;
-  fill: #ffffff;
 }
 
 .foter__link {
@@ -734,6 +672,65 @@ h2 { /* for mobile */
 }
 .foter__link:hover .foter__icons, .foter__link:focus .foter__icons {
   background-color: #2196f3;
+}
+
+.foter__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.foter__form .foter__field-email {
+  width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+.foter__form .foter__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px 13px 10px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border: 0px;
+  border-radius: 4px;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foter__form .foter__btn:hover, .foter__form .foter__btn:focus {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.foter__form .foter__btn .foter__form-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  fill: #ffffff;
 }
 
 /* ### Backdrop ### */
