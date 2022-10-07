@@ -4,12 +4,13 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
 
     position: relative;
+    top: 40px;      /* for mobile */
+    left: 15px;     /* for mobile */
    
     // margin-top: 50px;
-    margin-top: 0px;       /* for mobile */
+    //margin-top: 40px;       /* for mobile */
 }
 
