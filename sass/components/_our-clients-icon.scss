@@ -1,15 +1,11 @@
+
+
 .our-clients__icon{     /* svg */
     margin: auto;
 
     // width: 170px;
     width: 210px;   /* for mobile */
     height: 92px;
-
-    
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 
     fill: $iconColor;
 
@@ -20,9 +16,17 @@
     transition-property: border-color, fill;    /* transition */
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    & use{
+        left: 300px;
+    }
 }
 
 .our-clients__link{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover,
     &:focus{
@@ -30,6 +34,10 @@
      border-color: $mainColor;
  
          & .our-clients__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
              fill:  $mainColor;
              border-color: $mainColor;
          }

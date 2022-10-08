@@ -488,7 +488,7 @@ h2 { /* for mobile */
 
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
 .our-clients__icon { /* svg */
-  margin: 0px;
+  margin: auto;
   width: 210px; /* for mobile */
   height: 92px;
   fill: #AFB1B8;
@@ -503,45 +503,40 @@ h2 { /* for mobile */
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.our-clients__icon use {
+  left: 300px;
+}
 
 .our-clients__link {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .our-clients__link:hover, .our-clients__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
 }
 .our-clients__link:hover .our-clients__icon, .our-clients__link:focus .our-clients__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   fill: #2196f3;
   border-color: #2196f3;
 }
 
 /* ****************************************************** */
-@media screen and (min-width: 768px) { /* for tablet */
-  .our-clients__item {
-    width: 226px;
-    height: 92px;
-  }
-  .our-clients__item .our-clients__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .our-clients__item .our-clients__link .our-clients__icon {
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .our-clients__item .our-clients__link .our-clients__icon use {
-    width: 106px;
-    height: 60px;
-  }
-}
 /* ### Menu ### */
 .menu__list {
   -webkit-box-sizing: border-box;
