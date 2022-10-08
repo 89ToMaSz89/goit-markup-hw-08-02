@@ -17,6 +17,7 @@
 }
 
 .our-clients__link{
+    align-content: center;
     &:hover,
     &:focus{
      fill:  $mainColor;
@@ -27,4 +28,27 @@
              border-color: $mainColor;
          }
     }
+ }
+
+ /* ****************************************************** */
+
+//  @media screen and (min-width: 768px){      /* for tablet */
+        
+//     }
+
+    // .our-clients__link{
+    //     // width: 226px;
+    //     //display: flex;
+
+    //     & .our-clients__icon{
+    //         width: 226px;
+    //         height: 92px;
+    //         margin: auto;
+    //         display: flex;
+
+    //         & use {
+    //             display: contents;
+    //         }
+    //     }
+    // }
  }

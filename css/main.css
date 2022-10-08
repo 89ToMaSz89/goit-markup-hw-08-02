@@ -504,6 +504,10 @@ h2 { /* for mobile */
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.our-clients__link {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
 .our-clients__link:hover, .our-clients__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
@@ -513,6 +517,24 @@ h2 { /* for mobile */
   border-color: #2196f3;
 }
 
+/* ****************************************************** */
+@media screen and (min-width: 768px) { /* for tablet */
+  .our-clients__item {
+    width: 226px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-clients__item .our-clients__link .our-clients__icon {
+    width: 106px;
+  }
+  .our-clients__item .our-clients__link .our-clients__icon use {
+    height: 60px;
+  }
+}
 /* ### Menu ### */
 .menu__list {
   -webkit-box-sizing: border-box;
