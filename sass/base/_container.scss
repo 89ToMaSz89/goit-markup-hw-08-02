@@ -5,6 +5,13 @@
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {    /* for tablet */
+  .container{
+    max-width: 738px;
+    margin: 0 auto;
+  }
+}
+
             // .container{
 //   max-width: 1200px;
             

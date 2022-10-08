@@ -9,11 +9,29 @@
   
     background-color: $fourthColor;
 
-    //overflow: hidden;     /* for mobile */
-  }
+    overflow: hidden;
+}
 
   .main-head--border-bottom{
     border-bottom: 1px solid $borderHeadColor;
 }
+
+/* *********************************************************** */
+
+@media screen and (min-width: 768px){   /* for tablet */
+  .main-head{
+    gap: 83px;
+    padding: 26px 15px;
+
+    &__link{
+
+      & .main-head__icon{
+        display: none;
+      }
+    }
+  }
+}
+
+
 
  

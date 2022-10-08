@@ -1,50 +1,52 @@
-
-// .header-navigation__list{           /* ### Menu navigation ### */
-//     margin: 0px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 43px;
-//     margin-left: 93px;
-
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.143;
-//     letter-spacing: 0.02em; 
-
-//     margin-right: 364px;
-// }
-
-// .header-navigation__link{
-//     color: $secondaryColor;
-//     text-decoration: none;
+@media screen and (min-width: 768px){
+    .header-navigation__list{           /* ### Menu navigation ### */
+        margin: 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
     
-//     transition-property: color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-//     &:hover,
-//     &:focus,
-//     &:active{
-//         color: $mainColor;
-//     }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em; 
 
-//     &--underline{
+        //margin-right: 0px;
+    }
+    
+    .header-navigation__link{
+        color: $secondaryColor;
+        text-decoration: none;
         
-//         &::after{     /* PSEUDO CLASS ::AFTER */
-//         margin: 0px;
-//         margin-top: 36px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus,
+        &:active{
+            color: $mainColor;
+        }
     
-//         content: "";
-//         background-color: $mainColor;
-//         padding: 2px 26.5px;
-//         border-radius: 2px;
-    
-//         display: block;
-//         position: absolute;
-//         }
-//     }
-// }
+        &--underline{
+            
+            &::after{     /* PSEUDO CLASS ::AFTER */
+            margin: 0px;
+            margin-top: 29px;
+        
+            content: "";
+            background-color: $mainColor;
+            padding: 2px 26.5px;
+            border-radius: 2px;
+        
+            display: block;
+            position: absolute;
+            }
+        }
+    }
+}
+
     
     
     
