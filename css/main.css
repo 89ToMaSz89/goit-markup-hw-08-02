@@ -292,6 +292,10 @@ h2 { /* for mobile */
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .our-strengths__list--distance {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
   .our-strengths__list .our-strengths__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -416,6 +420,21 @@ h2 { /* for mobile */
 }
 
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
+/* **************************************************** */
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .our-team__list .our-team__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 .our-team__icon {
   fill: #AFB1B8;
   border-radius: 50%;

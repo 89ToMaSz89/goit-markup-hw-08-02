@@ -75,3 +75,16 @@
 }
 
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
+
+/* **************************************************** */
+
+@media screen and (min-width: 768px){
+    .our-team__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & .our-team__item{
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    }
+}
