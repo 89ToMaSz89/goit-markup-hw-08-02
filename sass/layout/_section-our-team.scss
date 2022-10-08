@@ -22,7 +22,7 @@
     }
 
     &--position{      /* svg */ /* for mobile */
-        flex-direction: row;    
+        flex-direction: row;  
         gap: 10px;
         margin: 0px 122px 24px 122px;
     }
@@ -73,6 +73,14 @@
         }
     }
 }
+
+// .our-team__item-social{
+//     box-sizing: border-box;
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+// }
+
 
 /* ************ END SECTION NO.3 - OUR TEAM *************** */
 

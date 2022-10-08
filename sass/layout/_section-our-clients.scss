@@ -20,3 +20,12 @@
 }
 
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
+
+@media screen and (min-width: 768px){
+    .our-clients__list{
+
+        & .our-clients__item{
+            flex-basis: ((100% - 60px) / 3);
+        }
+    }
+}
