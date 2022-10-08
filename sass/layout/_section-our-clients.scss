@@ -2,8 +2,9 @@
 
 .our-clients__list{           
     display: flex;
-    align-items:center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
     gap: 30px;
 
     font-weight: 700;
@@ -19,5 +20,18 @@
     }
 }
 
+// .our-clients__item{
+//     flex-basis: calc((100% - 30px) / 2);
+// }
+
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
 
+// @media screen and (min-width: 768px){
+//     .our-clients__list{
+//         justify-content: center;
+
+//         & .our-clients__item{
+//             flex-basis: ((100% - 60px) / 3);
+//         }
+//     }
+// }

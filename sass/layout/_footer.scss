@@ -26,8 +26,7 @@
         letter-spacing: 0.03em;
     
         color: $fourthColor;
-    }
-    
+    }   
 }
 
 .foter__list--collocation{
@@ -49,3 +48,16 @@
     
         color: $fourthColor;
 }
+
+/* *************************************************** */
+
+// @media screen and (min-width: 768px){
+//     .foter__list{
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//     }
+
+    // .foter__list--collocation{
+    //     flex-direction: column;
+    // }

@@ -470,11 +470,14 @@ h2 { /* for mobile */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   gap: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -487,56 +490,48 @@ h2 { /* for mobile */
 }
 
 /* ********* END SECTION NO.4 - OUR CLIENTS *************** */
-.our-clients__icon { /* svg */
+.our-clients__box {
   margin: auto;
-  width: 210px; /* for mobile */
-  height: 92px;
-  fill: #AFB1B8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  -webkit-transition-property: border-color, fill;
-  transition-property: border-color, fill; /* transition */
+  padding: 16px 52px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color; /* transition */
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-clients__icon use {
-  left: 300px;
+
+.our-clients__icon { /* svg */
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+  border: none;
+  -webkit-transition-property: fill;
+  transition-property: fill; /* transition */
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .our-clients__link:hover, .our-clients__link:focus {
   fill: #2196f3;
-  border-color: #2196f3;
 }
 .our-clients__link:hover .our-clients__icon, .our-clients__link:focus .our-clients__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   fill: #2196f3;
+}
+.our-clients__link:hover .our-clients__box, .our-clients__link:focus .our-clients__box {
   border-color: #2196f3;
 }
 
 /* ****************************************************** */
+@media screen and (min-width: 768px) {
+  .our-clients__box {
+    padding: 16px 60px;
+  }
+}
 /* ### Menu ### */
 .menu__list {
   -webkit-box-sizing: border-box;
@@ -737,6 +732,7 @@ h2 { /* for mobile */
   color: #ffffff;
 }
 
+/* *************************************************** */
 .foter__link {
   font-family: "Roboto";
   font-style: normal;
