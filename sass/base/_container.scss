@@ -3,12 +3,22 @@
 .container{             /* for mobile */
   max-width: 450px;
   margin: 0 auto;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {    /* for tablet */
   .container{
     max-width: 738px;
     margin: 0 auto;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
