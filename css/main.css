@@ -90,6 +90,12 @@ h2 { /* for mobile */
 }
 
 .foter__logo { /* ### Logo - footer ### */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -742,6 +748,10 @@ h2 { /* for mobile */
   padding-top: 0px;
 }
 
+.foter__contact--collocation {
+  margin-top: 20px;
+}
+
 .foter__head {
   font-weight: 700;
   font-size: 14px;
@@ -751,6 +761,32 @@ h2 { /* for mobile */
 }
 
 /* *************************************************** */
+@media screen and (min-width: 768px) {
+  .foter__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 144px;
+  }
+  .foter__list--collocation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+  .foter__list--collocation-social {
+    gap: 10px;
+  }
+  .foter__list--position-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
 .foter__link {
   font-family: "Roboto";
   font-style: normal;

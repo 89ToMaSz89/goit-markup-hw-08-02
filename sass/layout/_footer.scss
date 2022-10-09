@@ -40,6 +40,10 @@
     padding-top: 0px;
 }
 
+.foter__contact--collocation{
+    margin-top: 20px;
+}
+
 .foter__head {
         font-weight: 700;
         font-size: 14px;
@@ -51,13 +55,20 @@
 
 /* *************************************************** */
 
-// @media screen and (min-width: 768px){
-//     .foter__list{
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//     }
-
-    // .foter__list--collocation{
-    //     flex-direction: column;
-    // }
+@media screen and (min-width: 768px){
+    .foter__list{
+        flex-direction: row;
+        gap: 144px;
+    }
+    .foter__list--collocation{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .foter__list--collocation-social{
+        gap: 10px;
+    }
+    .foter__list--position-social{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
