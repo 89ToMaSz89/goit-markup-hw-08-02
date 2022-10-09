@@ -760,13 +760,27 @@ h2 { /* for mobile */
   color: #ffffff;
 }
 
+.foter__ist--position-social {
+  padding-bottom: 60px;
+}
+
+.foter__list-form {
+  position: relative;
+  margin-top: 60px;
+}
+
 /* *************************************************** */
 @media screen and (min-width: 768px) {
   .foter__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 144px;
   }
   .foter__list--collocation {
@@ -785,6 +799,12 @@ h2 { /* for mobile */
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .foter__list-form {
+    position: relative;
+    margin-top: 0px;
   }
 }
 .foter__link {

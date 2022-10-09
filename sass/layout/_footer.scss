@@ -53,12 +53,27 @@
         color: $fourthColor;
 }
 
+.foter__ist--position-social{
+    padding-bottom: 60px;
+}
+
+.foter__list-form{
+    position: relative;
+    margin-top: 60px;
+}
+
 /* *************************************************** */
 
 @media screen and (min-width: 768px){
     .foter__list{
+        justify-content: center;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 144px;
+
+        // & .foter__item{
+        //     flex-basis: ((100% - 144px) / 2);
+        // }
     }
     .foter__list--collocation{
         flex-direction: column;
@@ -70,5 +85,12 @@
     .foter__list--position-social{
         flex-direction: column;
         gap: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .foter__list-form{
+        position: relative;
+        margin-top: 0px;
     }
 }
