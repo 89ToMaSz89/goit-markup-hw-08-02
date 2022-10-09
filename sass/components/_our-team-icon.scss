@@ -1,4 +1,7 @@
 .our-team__icon{
+    display: flex;
+    flex-wrap: wrap;
+
     fill: $iconColor;
 
     border-radius: 50%;
