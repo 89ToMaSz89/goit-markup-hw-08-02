@@ -471,11 +471,6 @@ h2 { /* for mobile */
 
 /* ### Our-clients ### */
 /* ************* SECTION NO.4 - OUR CLIENTS *************** */
-.our-clients {
-  max-width: 480px;
-  margin: auto;
-}
-
 .our-clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,9 +495,14 @@ h2 { /* for mobile */
       flex-basis: calc((100% - 30px) / 2);
 }
 
-/* ********* END SECTION NO.4 - OUR CLIENTS *************** */
+/* ******************************************************** */
+@media screen and (min-width: 768px) {
+  .our-clients__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .our-clients__icon { /* svg */
-  margin: 16px 0px;
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
@@ -525,6 +525,8 @@ h2 { /* for mobile */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 210px;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   -webkit-transition-property: border-color;
@@ -540,10 +542,14 @@ h2 { /* for mobile */
 }
 .our-clients__link:hover .our-clients__icon, .our-clients__link:focus .our-clients__icon {
   fill: #2196f3;
-  border-color: #2196f3;
 }
 
 /* ****************************************************** */
+@media screen and (min-width: 768px) {
+  .our-clients__link {
+    width: 226px;
+  }
+}
 /* ### Menu ### */
 .menu__list {
   -webkit-box-sizing: border-box;

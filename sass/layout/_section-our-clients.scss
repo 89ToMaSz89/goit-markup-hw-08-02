@@ -1,10 +1,5 @@
 /* ************* SECTION NO.4 - OUR CLIENTS *************** */
 
-.our-clients{
-    max-width: 480px;
-    margin: auto;
-}
-
 .our-clients__list{           
     display: flex;
     align-items: center;
@@ -28,15 +23,10 @@
     }
 }
 
+/* ******************************************************** */
 
-/* ********* END SECTION NO.4 - OUR CLIENTS *************** */
-
-// @media screen and (min-width: 768px){
-//     .our-clients__list{
-//         justify-content: center;
-
-//         & .our-clients__item{
-//             flex-basis: ((100% - 60px) / 3);
-//         }
-//     }
-// }
+@media screen and (min-width: 768px){
+    .our-clients__item{
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
